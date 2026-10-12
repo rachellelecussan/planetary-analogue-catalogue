@@ -2,7 +2,7 @@
 
 An open, searchable, citable map of places on Earth that scientists use to study other worlds: Mars, the Moon, the icy moons and the early Earth. Every site entry brings together the science, geology, access and safety information that students, researchers and lecturers need, with a cited source for each value.
 
-**Website:** https://rachellelecussan.github.io/the-planetary-analogue-catalogue/
+**Website:** https://rachellelecussan.github.io/planetary-analogue-catalogue/
 
 ## What's here
 
@@ -27,7 +27,7 @@ An open, searchable, citable map of places on Earth that scientists use to study
 1. Create a public repository (this one is called `the-planetary-analogue-catalogue`).
 2. Upload every file and folder from this project (drag them onto "uploading an existing file").
 3. In the repository, go to **Settings → Pages**, set **Source** to "Deploy from a branch", choose `main` and `/ (root)`, and save.
-4. After a minute or two the site is live at `https://rachellelecussan.github.io/the-planetary-analogue-catalogue/`.
+4. After a minute or two the site is live at `https://rachellelecussan.github.io/planetary-analogue-catalogue/`.
 
 Then edit `assets/config.js` (pencil icon on GitHub) to set your name, repository and, optionally, a form address for email submissions.
 
