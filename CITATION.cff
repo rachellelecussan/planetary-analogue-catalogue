@@ -8,8 +8,8 @@ license: CC-BY-4.0
 authors:
   - family-names: "Le Cussan"
     given-names: "Rachelle"
-repository-code: "https://github.com/rachellelecussan/the-planetary-analogue-catalogue"
-url: "https://rachellelecussan.github.io/the-planetary-analogue-catalogue/"
+repository-code: "https://github.com/rachellelecussan/planetary-analogue-catalogue"
+url: "https://rachellelecussan.github.io/planetary-analogue-catalogue/"
 keywords:
   - planetary analogues
   - astrobiology
