@@ -8,7 +8,9 @@
     bases: [
       { key: 'satellite', name: 'Satellite', url: 'https://tiles.maps.eox.at/wmts/1.0.0/s2cloudless_3857/default/GoogleMapsCompatible/{z}/{y}/{x}.jpg', maxNative: 15,
         attribution: '<a href="https://s2maps.eu">Sentinel-2 cloudless</a> by EOX IT Services GmbH (contains modified Copernicus Sentinel data)' },
-      { key: 'outline', name: 'Outline', outline: true }
+      { key: 'outline', name: 'Outline', outline: true },
+      { key: 'elevation', name: 'Elevation', url: 'https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/ASTER_GDEM_Color_Shaded_Relief/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.jpeg', maxNative: 12,
+        attribution: 'Elevation: ASTER GDEM via <a href="https://www.earthdata.nasa.gov/gibs">NASA GIBS</a>', legend: 'Green is low, red and white are high. Grey is below sea level.' }
     ],
     overlays: [
       { key: 'geology', name: 'Geology', url: 'https://tiles.macrostrat.org/carto/{z}/{x}/{y}.png', opacity: 0.65, maxNative: 14,
