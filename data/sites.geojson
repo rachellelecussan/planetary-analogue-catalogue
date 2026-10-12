@@ -1,6 +1,6 @@
 {
  "type": "FeatureCollection",
- "generated": "2026-10-11",
+ "generated": "2026-10-12",
  "features": [
   {
    "type": "Feature",
@@ -183,32 +183,7 @@
       }
      ]
     },
-    "photos": [
-     {
-      "file": "rio-tinto-es-1.jpg",
-      "caption": "Red acidic Río Tinto seen from the mining railway",
-      "author": "Gzzz",
-      "licence": "CC BY-SA 4.0",
-      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "source": "https://commons.wikimedia.org/wiki/File:R%C3%ADo_Tinto_7.jpg"
-     },
-     {
-      "file": "rio-tinto-es-2.jpg",
-      "caption": "Bright red waters at the Río Tinto source, Nerva",
-      "author": "LBM1948",
-      "licence": "CC BY-SA 4.0",
-      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "source": "https://commons.wikimedia.org/wiki/File:R%C3%ADo_Tinto%2C_nacimiento_05.jpg"
-     },
-     {
-      "file": "rio-tinto-es-3.jpg",
-      "caption": "Río Tinto riverbed near Los Frailes station, Zalamea la Real",
-      "author": "LBM1948",
-      "licence": "CC BY-SA 4.0",
-      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "source": "https://commons.wikimedia.org/wiki/File:R%C3%ADo_Tinto%2C_Los_Frailes_11.jpg"
-     }
-    ]
+    "photos": []
    }
   },
   {
@@ -327,24 +302,7 @@
       }
      ]
     },
-    "photos": [
-     {
-      "file": "atacama-yungay-cl-1.jpg",
-      "caption": "Barren hyperarid Atacama plain between Antofagasta and Taltal",
-      "author": "Valerio Pillar",
-      "licence": "CC BY-SA 2.0",
-      "licence_url": "https://creativecommons.org/licenses/by-sa/2.0/",
-      "source": "https://commons.wikimedia.org/wiki/File:Atacama_Desert_between_Antofagasta_and_Taltal.jpg"
-     },
-     {
-      "file": "atacama-yungay-cl-2.jpg",
-      "caption": "Typical hyperarid Atacama landscape near Calama, Antofagasta Region",
-      "author": "Diego Delso",
-      "licence": "CC BY-SA 4.0",
-      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "source": "https://commons.wikimedia.org/wiki/File:Paisaje_cerca_de_Calama%2C_Chile%2C_2016-02-01%2C_DD_83.JPG"
-     }
-    ]
+    "photos": []
    }
   },
   {
@@ -529,32 +487,7 @@
       }
      ]
     },
-    "photos": [
-     {
-      "file": "dallol-et-1.jpg",
-      "caption": "Aerial view of the Dallol hydrothermal field",
-      "author": "Thomas Fuhrmann",
-      "licence": "CC BY-SA 4.0",
-      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "source": "https://commons.wikimedia.org/wiki/File:Ethiopia_-_Dallol.jpg"
-     },
-     {
-      "file": "dallol-et-2.jpg",
-      "caption": "Acid pool with salt, sulfur and mineral crusts at Dallol",
-      "author": "Hervé Sthioul",
-      "licence": "CC BY 2.5",
-      "licence_url": "https://creativecommons.org/licenses/by/2.5/",
-      "source": "https://commons.wikimedia.org/wiki/File:Dallol-2001.jpg"
-     },
-     {
-      "file": "dallol-et-3.jpg",
-      "caption": "Salt geyser formation at Dallol",
-      "author": "Jan Markiewicz",
-      "licence": "CC BY-SA 3.0",
-      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "source": "https://commons.wikimedia.org/wiki/File:Dallol_gejzer_solny_-_panoramio.jpg"
-     }
-    ]
+    "photos": []
    }
   },
   {
@@ -755,32 +688,7 @@
       }
      ]
     },
-    "photos": [
-     {
-      "file": "mcmurdo-dry-valleys-aq-1.jpg",
-      "caption": "Wright Valley looking west from Bull Pass towards Lake Vanda",
-      "author": "David Saul",
-      "licence": "Public domain",
-      "licence_url": null,
-      "source": "https://commons.wikimedia.org/wiki/File:Wright_Valley_From_Bull_Pass.jpg"
-     },
-     {
-      "file": "mcmurdo-dry-valleys-aq-2.jpg",
-      "caption": "Blood Falls seeping from Taylor Glacier into Lake Bonney",
-      "author": "National Science Foundation/Peter Rejcek",
-      "licence": "Public domain",
-      "licence_url": null,
-      "source": "https://commons.wikimedia.org/wiki/File:Blood_Falls_by_Peter_Rejcek.jpg"
-     },
-     {
-      "file": "mcmurdo-dry-valleys-aq-3.jpg",
-      "caption": "Taylor Valley with Canada Glacier and Lake Hoare",
-      "author": "David Haney, NSF",
-      "licence": "Public domain",
-      "licence_url": null,
-      "source": "https://commons.wikimedia.org/wiki/File:Taylor_Valley_2008_01.jpg"
-     }
-    ]
+    "photos": []
    }
   },
   {
@@ -1018,32 +926,7 @@
       }
      ]
     },
-    "photos": [
-     {
-      "file": "haughton-crater-ca-1.jpg",
-      "caption": "View near the edge of Haughton impact crater",
-      "author": "Haughton Mars Project",
-      "licence": "Public domain",
-      "licence_url": null,
-      "source": "https://commons.wikimedia.org/wiki/File:Edge_of_Haughton_Crater_%282672692755%29.jpg"
-     },
-     {
-      "file": "haughton-crater-ca-2.jpg",
-      "caption": "Rock formation inside Haughton Crater, Devon Island",
-      "author": "Haughton Mars Project",
-      "licence": "Public domain",
-      "licence_url": null,
-      "source": "https://commons.wikimedia.org/wiki/File:Rock_Formation_in_Haughton_Crater_%282673474042%29.jpg"
-     },
-     {
-      "file": "haughton-crater-ca-3.jpg",
-      "caption": "NASA K10 rovers near the Haughton-Mars Project base camp",
-      "author": "NASA",
-      "licence": "Public domain",
-      "licence_url": null,
-      "source": "https://commons.wikimedia.org/wiki/File:Rovers_Red_and_Black_at_Houghton_Crater_Devon_Island_Canada.jpg"
-     }
-    ]
+    "photos": []
    }
   },
   {
@@ -1225,32 +1108,7 @@
       }
      ]
     },
-    "photos": [
-     {
-      "file": "iceland-volcanic-fields-is-1.jpg",
-      "caption": "Holuhraun fissure eruption, September 2014",
-      "author": "Robert Askew ( https://imaggeo.egu.eu/user/283721/ )",
-      "licence": "CC BY-SA 3.0",
-      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "source": "https://commons.wikimedia.org/wiki/File:Holuhraun_Fissure_Eruption_in_Iceland_-_September_2014.jpg"
-     },
-     {
-      "file": "iceland-volcanic-fields-is-2.jpg",
-      "caption": "Aerial view of the Holuhraun eruption and lava field",
-      "author": "Milan Nykodym from Kutna Hora, Czech Republic",
-      "licence": "CC BY-SA 2.0",
-      "licence_url": "https://creativecommons.org/licenses/by-sa/2.0/",
-      "source": "https://commons.wikimedia.org/wiki/File:B%C3%A1r%C3%B0arbunga_-_Holuhraun_%2814971302084%29.jpg"
-     },
-     {
-      "file": "iceland-volcanic-fields-is-3.jpg",
-      "caption": "Leirhnjúkur lava field in the Krafla caldera",
-      "author": "rheins",
-      "licence": "CC BY 3.0",
-      "licence_url": "https://creativecommons.org/licenses/by/3.0/",
-      "source": "https://commons.wikimedia.org/wiki/File:Leirhnj%C3%BAkur_Lava_Field_-_2013.08_-_panoramio.jpg"
-     }
-    ]
+    "photos": []
    }
   },
   {
@@ -1512,24 +1370,7 @@
       }
      ]
     },
-    "photos": [
-     {
-      "file": "pilbara-strelley-pool-au-1.jpg",
-      "caption": "Archean pillow basalt outcrop, Mount Ada Basalt, eastern Pilbara",
-      "author": "A.R. Brenner, R.R. Fu, A.J. Brown, E.B. Hodgin, D.T. Flannery & M.D. Schmitz",
-      "licence": "CC BY 4.0",
-      "licence_url": "https://creativecommons.org/licenses/by/4.0/",
-      "source": "https://commons.wikimedia.org/wiki/File:Pillow_structures_in_Mount_Ada_Basalt.jpg"
-     },
-     {
-      "file": "pilbara-strelley-pool-au-2.jpg",
-      "caption": "Hamersley Range landscape, Pilbara Region",
-      "author": "Barry T Coles at English Wikipedia",
-      "licence": "Public domain",
-      "licence_url": null,
-      "source": "https://commons.wikimedia.org/wiki/File:Hamersley_Range%2C_Pilbara_Region%2C_Western_Australia.JPG"
-     }
-    ]
+    "photos": []
    }
   },
   {
@@ -1715,32 +1556,7 @@
       }
      ]
     },
-    "photos": [
-     {
-      "file": "shark-bay-hamelin-pool-au-1.jpg",
-      "caption": "Living stromatolites in Hamelin Pool, Shark Bay",
-      "author": "Paul Harrison",
-      "licence": "CC BY-SA 3.0",
-      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "source": "https://commons.wikimedia.org/wiki/File:Stromatolites_in_Sharkbay.jpg"
-     },
-     {
-      "file": "shark-bay-hamelin-pool-au-2.jpg",
-      "caption": "Stromatolites at Hamelin Pool Marine Nature Reserve",
-      "author": "Martin Kraft",
-      "licence": "CC BY-SA 3.0",
-      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "source": "https://commons.wikimedia.org/wiki/File:MK-08233_Hamelin_Pool_Stromatolites.jpg"
-     },
-     {
-      "file": "shark-bay-hamelin-pool-au-3.jpg",
-      "caption": "Stromatolite field in shallow water at Hamelin Pool",
-      "author": "Phil Whitehouse from London, United Kingdom",
-      "licence": "CC BY 2.0",
-      "licence_url": "https://creativecommons.org/licenses/by/2.0/",
-      "source": "https://commons.wikimedia.org/wiki/File:Hamelin_Pool_%28Stromatolites%29_%282052468336%29.jpg"
-     }
-    ]
+    "photos": []
    }
   },
   {
@@ -1926,32 +1742,7 @@
       }
      ]
     },
-    "photos": [
-     {
-      "file": "arkaroola-au-1.jpg",
-      "caption": "Sunset over the Arkaroola ranges, northern Flinders Ranges",
-      "author": "John Morton from Adelaide",
-      "licence": "CC BY 2.0",
-      "licence_url": "https://creativecommons.org/licenses/by/2.0/",
-      "source": "https://commons.wikimedia.org/wiki/File:Arkaroola_Sunset%2C_South_Australia_%2849849951657%29.jpg"
-     },
-     {
-      "file": "arkaroola-au-2.jpg",
-      "caption": "Former Radium Ridge uranium mine at Mount Gee, Arkaroola",
-      "author": "Geomartin",
-      "licence": "CC BY-SA 3.0",
-      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "source": "https://commons.wikimedia.org/wiki/File:Radiumridgemine_arkaroola.JPG"
-     },
-     {
-      "file": "arkaroola-au-3.jpg",
-      "caption": "Flinders Ranges at Paralana Hot Springs",
-      "author": "State Government Photographer",
-      "licence": "CC0",
-      "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-      "source": "https://commons.wikimedia.org/wiki/File:View_of_Flinders_Ranges%28GN10237%29.jpg"
-     }
-    ]
+    "photos": []
    }
   },
   {
@@ -2147,32 +1938,7 @@
       }
      ]
     },
-    "photos": [
-     {
-      "file": "lanzarote-es-1.jpg",
-      "caption": "ʻAʻā lava field in Timanfaya National Park",
-      "author": "H. Zell",
-      "licence": "CC BY-SA 3.0",
-      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "source": "https://commons.wikimedia.org/wiki/File:Timanfaya_-_Lanzarote_04.jpg"
-     },
-     {
-      "file": "lanzarote-es-2.jpg",
-      "caption": "Pāhoehoe lava field in Timanfaya National Park",
-      "author": "H. Zell",
-      "licence": "CC BY-SA 3.0",
-      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "source": "https://commons.wikimedia.org/wiki/File:Timanfaya_-_Lanzarote_02.jpg"
-     },
-     {
-      "file": "lanzarote-es-3.jpg",
-      "caption": "Lava fields and volcanic cones, Timanfaya National Park",
-      "author": "Gerd Eichmann",
-      "licence": "CC BY 4.0",
-      "licence_url": "https://creativecommons.org/licenses/by/4.0/",
-      "source": "https://commons.wikimedia.org/wiki/File:Lanzarote-Nationalpark_Timanfaya-12-Lava-2015-gje.jpg"
-     }
-    ]
+    "photos": []
    }
   },
   {
@@ -2395,24 +2161,7 @@
       }
      ]
     },
-    "photos": [
-     {
-      "file": "bockfjord-svalbard-sj-1.jpg",
-      "caption": "Bockfjorden with Sverrefjellet volcano and Adolfbreen glacier",
-      "author": "Bjoertvedt",
-      "licence": "CC BY-SA 3.0",
-      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "source": "https://commons.wikimedia.org/wiki/File:Haakon_VII_Land_Bockfjorden_IMG_5543_Trolltindane_Sverrefjellet_Adolfbreen_Sm%C3%B6rstabben.JPG"
-     },
-     {
-      "file": "bockfjord-svalbard-sj-2.jpg",
-      "caption": "Sverrefjellet and surrounding peaks above Bockfjorden, Svalbard",
-      "author": "Bjoertvedt",
-      "licence": "CC BY-SA 3.0",
-      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "source": "https://commons.wikimedia.org/wiki/File:Haakon_VII_Land_Sverrefjellet_Trolltindane_Adolfbreen_Williamstaarnet_behind_Roosflya_IMG_5500.JPG"
-     }
-    ]
+    "photos": []
    }
   },
   {
@@ -2591,32 +2340,7 @@
       }
      ]
     },
-    "photos": [
-     {
-      "file": "mauna-kea-us-1.jpg",
-      "caption": "Cinder cones (puʻu) at the summit of Mauna Kea",
-      "author": "S P Schmidt",
-      "licence": "CC BY 4.0",
-      "licence_url": "https://creativecommons.org/licenses/by/4.0/",
-      "source": "https://commons.wikimedia.org/wiki/File:Pu%27u_on_Mauna_Kea.jpg"
-     },
-     {
-      "file": "mauna-kea-us-2.jpg",
-      "caption": "Volcanic cinder cones near the Mauna Kea summit",
-      "author": "Kevin R Foote",
-      "licence": "CC BY-SA 3.0",
-      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "source": "https://commons.wikimedia.org/wiki/File:Volcanic_Cinder_Cones_near_summit_of_Mauna_Kea_-_panoramio.jpg"
-     },
-     {
-      "file": "mauna-kea-us-3.jpg",
-      "caption": "Puʻu Poliʻahu cinder cone with summit telescopes",
-      "author": "Denys (fr)",
-      "licence": "CC BY 3.0",
-      "licence_url": "https://creativecommons.org/licenses/by/3.0/",
-      "source": "https://commons.wikimedia.org/wiki/File:Puu_Poliahu_JCMT_SMA.jpg"
-     }
-    ]
+    "photos": []
    }
   },
   {
@@ -2794,32 +2518,7 @@
       }
      ]
     },
-    "photos": [
-     {
-      "file": "boulby-mine-gb-1.jpg",
-      "caption": "Boulby Mine surface buildings, North Yorkshire coast",
-      "author": "Labratcreative",
-      "licence": "CC BY-SA 4.0",
-      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "source": "https://commons.wikimedia.org/wiki/File:BoulbyMineICLUK.jpg"
-     },
-     {
-      "file": "boulby-mine-gb-2.jpg",
-      "caption": "Boulby potash mine seen from the hillside",
-      "author": "KlausFoehl",
-      "licence": "CC BY-SA 3.0",
-      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "source": "https://commons.wikimedia.org/wiki/File:Boulby_mine01_2010-09-09.jpg"
-     },
-     {
-      "file": "boulby-mine-gb-3.jpg",
-      "caption": "View across farmland towards Boulby Potash Mine",
-      "author": "Michael Jagger",
-      "licence": "CC BY-SA 2.0",
-      "licence_url": "https://creativecommons.org/licenses/by-sa/2.0/",
-      "source": "https://commons.wikimedia.org/wiki/File:View_towards_Boulby_Potash_Mine_-_geograph.org.uk_-_1752884.jpg"
-     }
-    ]
+    "photos": []
    }
   },
   {
@@ -3015,24 +2714,7 @@
       }
      ]
     },
-    "photos": [
-     {
-      "file": "lost-city-vent-field-2.jpg",
-      "caption": "Carbonate tower rising at the Lost City vent field",
-      "author": "“Susan Lang, U. of SC. / NSF / ROV Jason / 2018 © Woods Hole Oceanographic Institution.”",
-      "licence": "CC BY-SA 4.0",
-      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "source": "https://commons.wikimedia.org/wiki/File:Sulis_20180919080019.jpg"
-     },
-     {
-      "file": "lost-city-vent-field-3.jpg",
-      "caption": "Carbonate formation at Lost City, Okeanos Explorer expedition",
-      "author": "NOAA",
-      "licence": "Public domain",
-      "licence_url": null,
-      "source": "https://commons.wikimedia.org/wiki/File:Formation_at_Lost_City_Field.jpg"
-     }
-    ]
+    "photos": []
    }
   },
   {
@@ -3247,24 +2929,7 @@
       }
      ]
     },
-    "photos": [
-     {
-      "file": "lake-vostok-aq-1.jpg",
-      "caption": "Russian Vostok Station on the East Antarctic plateau",
-      "author": "NSF/Josh Landis, employee 1999-2001",
-      "licence": "Public domain",
-      "licence_url": null,
-      "source": "https://commons.wikimedia.org/wiki/File:Russian_station_Vostok.jpg"
-     },
-     {
-      "file": "lake-vostok-aq-2.jpg",
-      "caption": "RADARSAT radar image of the ice surface above Lake Vostok",
-      "author": "NASA/Goddard Space Flight Center Scientific Visualization Studio. Additional credit goes to Canadian Space Agency, RADARSAT International Inc.",
-      "licence": "Public domain",
-      "licence_url": null,
-      "source": "https://commons.wikimedia.org/wiki/File:Lake_Vostok_NASA.jpg"
-     }
-    ]
+    "photos": []
    }
   },
   {
@@ -3440,24 +3105,7 @@
       }
      ]
     },
-    "photos": [
-     {
-      "file": "lava-beds-us-1.jpg",
-      "caption": "Illuminated lava tube cave at Lava Beds National Monument",
-      "author": "Leonard G.",
-      "licence": "Public domain",
-      "licence_url": null,
-      "source": "https://commons.wikimedia.org/wiki/File:IlluminatedLavaTubeAtLBNMi-C0070.JPG"
-     },
-     {
-      "file": "lava-beds-us-3.jpg",
-      "caption": "Valentine Cave lava tube, Lava Beds National Monument",
-      "author": "Dave Bunnell / Under Earth Images",
-      "licence": "CC BY-SA 2.5",
-      "licence_url": "https://creativecommons.org/licenses/by-sa/2.5/",
-      "source": "https://commons.wikimedia.org/wiki/File:Valentine_Cave.JPG"
-     }
-    ]
+    "photos": []
    }
   }
  ]
