@@ -1,0 +1,59 @@
+name: Add or correct a site
+description: Propose a new analogue site, or a correction to an existing one
+title: "Site: "
+labels: ["submission"]
+body:
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Is this a new site or a correction?
+      options: ["New site", "Correction to an existing site"]
+    validations:
+      required: true
+  - type: input
+    id: name
+    attributes:
+      label: Site name
+      placeholder: Río Tinto
+    validations:
+      required: true
+  - type: input
+    id: location
+    attributes:
+      label: Country and coordinates
+      description: Decimal degrees, latitude then longitude (south and west are negative)
+      placeholder: Spain, 37.21, -6.94
+    validations:
+      required: true
+  - type: dropdown
+    id: target
+    attributes:
+      label: Main body it is an analogue for
+      options: ["Mars", "Moon", "Venus", "Mercury", "Europa", "Enceladus", "Titan", "Ganymede", "Callisto", "Io", "Ceres", "Vesta", "Comets", "Asteroids (general)", "Icy moons (general)", "Exoplanets (general)", "Early Earth"]
+    validations:
+      required: true
+  - type: textarea
+    id: relevance
+    attributes:
+      label: Why is it a good analogue? (or, for a correction, what should change)
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Other details
+      description: Geology, environment (pH, temperature), access, permits, hazards. Leave out anything you are unsure of.
+  - type: textarea
+    id: references
+    attributes:
+      label: References
+      description: One DOI or URL per line. At least one should be peer-reviewed.
+    validations:
+      required: true
+  - type: checkboxes
+    id: licence
+    attributes:
+      label: Licence
+      options:
+        - label: I agree to release this contribution under CC BY 4.0
+          required: true
