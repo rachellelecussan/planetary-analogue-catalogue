@@ -302,7 +302,24 @@
       }
      ]
     },
-    "photos": []
+    "photos": [
+     {
+      "file": "atacama-yungay-cl-1.jpg",
+      "caption": "Barren hyperarid Atacama plain between Antofagasta and Taltal",
+      "author": "Valerio Pillar",
+      "licence": "CC BY-SA 2.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Atacama_Desert_between_Antofagasta_and_Taltal.jpg"
+     },
+     {
+      "file": "atacama-yungay-cl-2.jpg",
+      "caption": "Typical hyperarid Atacama landscape near Calama, Antofagasta Region",
+      "author": "Diego Delso",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Paisaje_cerca_de_Calama%2C_Chile%2C_2016-02-01%2C_DD_83.JPG"
+     }
+    ]
    }
   },
   {
@@ -487,7 +504,32 @@
       }
      ]
     },
-    "photos": []
+    "photos": [
+     {
+      "file": "dallol-et-1.jpg",
+      "caption": "Aerial view of the Dallol hydrothermal field",
+      "author": "Thomas Fuhrmann",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Ethiopia_-_Dallol.jpg"
+     },
+     {
+      "file": "dallol-et-2.jpg",
+      "caption": "Acid pool with salt, sulfur and mineral crusts at Dallol",
+      "author": "Hervé Sthioul",
+      "licence": "CC BY 2.5",
+      "licence_url": "https://creativecommons.org/licenses/by/2.5/",
+      "source": "https://commons.wikimedia.org/wiki/File:Dallol-2001.jpg"
+     },
+     {
+      "file": "dallol-et-3.jpg",
+      "caption": "Salt geyser formation at Dallol",
+      "author": "Jan Markiewicz",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Dallol_gejzer_solny_-_panoramio.jpg"
+     }
+    ]
    }
   },
   {
@@ -926,7 +968,16 @@
       }
      ]
     },
-    "photos": []
+    "photos": [
+     {
+      "file": "haughton-crater-ca-1.jpg",
+      "caption": "View near the edge of Haughton impact crater",
+      "author": "Haughton Mars Project",
+      "licence": "Public domain",
+      "licence_url": null,
+      "source": "https://commons.wikimedia.org/wiki/File:Edge_of_Haughton_Crater_%282672692755%29.jpg"
+     }
+    ]
    }
   },
   {
@@ -1742,7 +1793,32 @@
       }
      ]
     },
-    "photos": []
+    "photos": [
+     {
+      "file": "arkaroola-au-1.jpg",
+      "caption": "Sunset over the Arkaroola ranges, northern Flinders Ranges",
+      "author": "John Morton from Adelaide",
+      "licence": "CC BY 2.0",
+      "licence_url": "https://creativecommons.org/licenses/by/2.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Arkaroola_Sunset%2C_South_Australia_%2849849951657%29.jpg"
+     },
+     {
+      "file": "arkaroola-au-2.jpg",
+      "caption": "Former Radium Ridge uranium mine at Mount Gee, Arkaroola",
+      "author": "Geomartin",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Radiumridgemine_arkaroola.JPG"
+     },
+     {
+      "file": "arkaroola-au-3.jpg",
+      "caption": "Flinders Ranges at Paralana Hot Springs",
+      "author": "State Government Photographer",
+      "licence": "CC0",
+      "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:View_of_Flinders_Ranges%28GN10237%29.jpg"
+     }
+    ]
    }
   },
   {
@@ -2161,7 +2237,24 @@
       }
      ]
     },
-    "photos": []
+    "photos": [
+     {
+      "file": "bockfjord-svalbard-sj-1.jpg",
+      "caption": "Bockfjorden with Sverrefjellet volcano and Adolfbreen glacier",
+      "author": "Bjoertvedt",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Haakon_VII_Land_Bockfjorden_IMG_5543_Trolltindane_Sverrefjellet_Adolfbreen_Sm%C3%B6rstabben.JPG"
+     },
+     {
+      "file": "bockfjord-svalbard-sj-2.jpg",
+      "caption": "Sverrefjellet and surrounding peaks above Bockfjorden, Svalbard",
+      "author": "Bjoertvedt",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Haakon_VII_Land_Sverrefjellet_Trolltindane_Adolfbreen_Williamstaarnet_behind_Roosflya_IMG_5500.JPG"
+     }
+    ]
    }
   },
   {
@@ -2518,7 +2611,32 @@
       }
      ]
     },
-    "photos": []
+    "photos": [
+     {
+      "file": "boulby-mine-gb-1.jpg",
+      "caption": "Boulby Mine surface buildings, North Yorkshire coast",
+      "author": "Labratcreative",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:BoulbyMineICLUK.jpg"
+     },
+     {
+      "file": "boulby-mine-gb-2.jpg",
+      "caption": "Boulby potash mine seen from the hillside",
+      "author": "KlausFoehl",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Boulby_mine01_2010-09-09.jpg"
+     },
+     {
+      "file": "boulby-mine-gb-3.jpg",
+      "caption": "View across farmland towards Boulby Potash Mine",
+      "author": "Michael Jagger",
+      "licence": "CC BY-SA 2.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:View_towards_Boulby_Potash_Mine_-_geograph.org.uk_-_1752884.jpg"
+     }
+    ]
    }
   },
   {
