@@ -30,6 +30,9 @@
     return Math.max(zLon, zLat);
   };
 
+  const keyItems = (list) => (list || []).map((i) => ({ css: i.rgb ? `rgb(${i.rgb.join(',')})` : i.color, label: i.code ? `${i.code} · ${i.name}` : i.name }));
+  const keyHtml = (title, items) => `<details class="key" open><summary>${esc(title)} (${items.length})</summary><div class="keygrid">${items.map((i) => `<span class="keyitem"><span class="keysw" style="background:${i.css}"></span>${esc(i.label)}</span>`).join('')}</div></details>`;
+
   function render(root, s) {
     const c = s.compare;
     if (!c || !BODIES[c.body]) { root.hidden = true; return; }
@@ -51,6 +54,7 @@
             <label class="check small"><input type="checkbox" data-ov="names" checked> Place names</label>
           </div>
           <div class="info muted" id="rockInfo">Click the map to see what rock is at that spot.</div>
+          <div class="key" id="earthKey" hidden></div>
         </div>
         <div class="pane">
           <div class="pane-head"><span class="label">${esc(c.body)}</span><strong>${esc(c.area)}</strong></div>
@@ -61,6 +65,7 @@
             ${body.minerals.length ? `<label class="small">Mineralogy <select id="mineralSel"><option value="">None</option>${body.minerals.map((m) => `<option value="${esc(m.key)}">${esc(m.name)}</option>`).join('')}</select></label>
             <label class="small" id="opWrap" hidden>Opacity <input type="range" id="opacity" min="0.2" max="1" step="0.05" value="0.75" style="width:90px"></label>` : ''}
           </div>
+          <div class="key" id="planetKey" hidden></div>
           <div class="info muted" id="planetInfo">${polar ? 'Polar areas look stretched on flat maps. ' : ''}${body.minerals.length ? 'Choose a mineralogy layer to see composition.' : 'Composition maps are not yet available for this body.'}</div>
         </div>
       </div>
@@ -162,16 +167,20 @@
     root.querySelectorAll('[data-ov]').forEach((i) => i.addEventListener('change', () => {
       const l = eOv[i.dataset.ov]; i.checked ? l.addTo(em) : em.removeLayer(l);
       if (i.dataset.ov === 'geology') root.querySelector('#rockInfo').textContent = i.checked ? EARTH.overlays[0].legend : 'Click the map to see what rock is at that spot.';
+      if (i.dataset.ov === 'geology') { const k = root.querySelector('#earthKey'); k.hidden = !i.checked; k.innerHTML = i.checked ? keyHtml('Rock types, by colour', keyItems(EARTH.overlays[0].legendKey)) : ''; }
     }));
     root.querySelectorAll('.pane')[1].querySelector('.seg').addEventListener('click', (e) => {
       const b = e.target.closest('button'); if (!b) return;
       setPlanetBase(b.dataset.k);
       b.parentNode.querySelectorAll('button').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
     });
+    const pKey = root.querySelector('#planetKey');
+    const showPlanetKey = (items, title) => { pKey.innerHTML = keyHtml(title, items); pKey.hidden = false; };
+    const hidePlanetKey = () => { pKey.hidden = true; pKey.innerHTML = ''; };
     const gBox = root.querySelector('[data-pov="geology"]');
     if (gBox) gBox.addEventListener('change', () => {
-      if (gBox.checked) { geo = geo || tile(body.geology); geo.addTo(pm); legend(body.geology.legend); }
-      else if (geo) { pm.removeLayer(geo); legend(''); }
+      if (gBox.checked) { geo = geo || tile(body.geology); geo.addTo(pm); legend(body.geology.legend); showPlanetKey(keyItems(body.geology.legendKey), 'Geological units, by colour'); }
+      else if (geo) { pm.removeLayer(geo); legend(''); hidePlanetKey(); }
     });
     const sel = root.querySelector('#mineralSel'), op = root.querySelector('#opacity');
     if (sel) {
