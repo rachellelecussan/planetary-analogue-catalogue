@@ -5,7 +5,7 @@ window.PAC_CONFIG = {
   citeName: "Le Cussan, R.",
 
   // Your GitHub username and repository name, e.g. "janedoe/planetary-analogue-catalogue"
-  githubRepo: "rachellelecussan/the-planetary-analogue-catalogue",
+  githubRepo: "rachellelecussan/planetary-analogue-catalogue",
 
   // Where "Add a site" submissions go. Leave empty to send them as GitHub issues.
   // To receive them by email instead, create a free form at https://formspree.io
