@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it as below, and cite the original sources listed for each site."
+title: "Planetary Analogue Catalogue"
+type: dataset
+version: "0.1"
+date-released: "2026-10-11"
+license: CC-BY-4.0
+authors:
+  - family-names: "Le Cussan"
+    given-names: "Rachelle"
+repository-code: "https://github.com/rachellelecussan/the-planetary-analogue-catalogue"
+url: "https://rachellelecussan.github.io/the-planetary-analogue-catalogue/"
+keywords:
+  - planetary analogues
+  - astrobiology
+  - planetary science
+  - Mars
+  - field sites

@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Add a site · Planetary Analogue Catalogue</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/vendor/leaflet/leaflet.css">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+</head>
+<body>
+<header class="site-header">
+  <div class="inner">
+    <a class="brand" href="index.html">
+      <svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><circle cx="17" cy="17" r="9" fill="#B4471F"/><ellipse cx="17" cy="17" rx="16" ry="5.5" fill="none" stroke="#E9EDF1" stroke-width="1.5" transform="rotate(-20 17 17)"/></svg>
+      <span>Planetary Analogue Catalogue</span>
+    </a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="index.html">Map</a>
+      <a href="browse.html">Browse list</a>
+      <a href="submit.html" aria-current="page">Add a site</a>
+      <a href="about.html">About and citation</a>
+    </nav>
+    <a class="cite-btn" href="about.html#cite">Cite this dataset</a>
+  </div>
+</header>
+
+<main>
+  <div class="stack" style="gap:8px">
+    <h1 style="font-size:32px" id="title">Add an analogue site</h1>
+    <p style="font-size:16px;color:var(--ink-2);max-width:760px;line-height:1.55" id="intro">Anyone can propose a site. A reviewer checks every submission against its sources before it appears on the map. Fields marked * are required; the rest can be added later.</p>
+  </div>
+  <div id="result" role="status"></div>
+
+  <div class="row">
+    <nav class="card" aria-label="Form sections" style="flex:1 1 220px;max-width:100%;padding:16px">
+      <ol class="steps">
+        <li><a href="#s1"><span class="n">1</span>Location</a></li>
+        <li><a href="#s2"><span class="n">2</span>Analogue</a></li>
+        <li><a href="#s3"><span class="n">3</span>Geology and environment</a></li>
+        <li><a href="#s4"><span class="n">4</span>Access</a></li>
+        <li><a href="#s5"><span class="n">5</span>Safety</a></li>
+        <li><a href="#s6"><span class="n">6</span>Sources and you</a></li>
+      </ol>
+    </nav>
+
+    <form id="form" class="stack" style="flex:999 1 600px;min-width:0" novalidate>
+      <fieldset class="card" id="s0" hidden>
+        <legend>Your correction</legend>
+        <label class="field">What should change, and what is your source? *<textarea name="correction" rows="4" placeholder="The pH range should be 1.8 to 2.6, from Smith et al. 2024 (doi:10.xxxx/xxxx)"></textarea></label>
+      </fieldset>
+
+      <fieldset class="card" id="s1">
+        <legend>1. Location</legend>
+        <div class="grid2">
+          <label class="field">Site name *<input type="text" name="name" placeholder="Río Tinto"></label>
+          <label class="field">Country *<input type="text" name="country" placeholder="Spain"></label>
+        </div>
+        <label class="field">Region<input type="text" name="region" placeholder="Huelva, Andalusia"></label>
+        <div class="row" style="gap:16px">
+          <div style="flex:1 1 320px;min-width:0" class="stack">
+            <div id="pickmap" role="region" aria-label="Map: click to place the site"></div>
+            <span class="muted" style="font-size:13px">Click the map to drop a pin, or type the coordinates.</span>
+          </div>
+          <div style="flex:1 1 220px" class="stack">
+            <label class="field">Latitude *<span class="hint">Decimal degrees; south is negative</span><input type="number" step="any" name="latitude" class="mono" placeholder="37.21"></label>
+            <label class="field">Longitude *<span class="hint">Decimal degrees; west is negative</span><input type="number" step="any" name="longitude" class="mono" placeholder="-6.94"></label>
+            <label class="field">Precision to publish *<select name="coordinate_precision" data-vocab="coordinate_precision"></select></label>
+          </div>
+        </div>
+        <label class="check banner warn" style="font-weight:400"><input type="checkbox" name="sensitive_site"> <span><strong>This site is fragile, protected or on Indigenous or community land.</strong> Its location will be shown only approximately.</span></label>
+        <label class="field">One-line summary *<span class="hint">Under 300 characters</span><input type="text" name="summary" maxlength="300" placeholder="Acidic, iron-rich river system hosting extremophile communities"></label>
+      </fieldset>
+
+      <fieldset class="card" id="s2">
+        <legend>2. Analogue</legend>
+        <div class="stack" style="gap:10px"><span class="field">Analogue for * <span class="hint">Tick all that apply; the first ticked is treated as the main one</span></span><div class="checks" data-checks="analogue_for"></div></div>
+        <div class="stack" style="gap:10px"><span class="field">Analogue type *</span><div class="checks" data-checks="analogue_type"></div></div>
+        <label class="field">Planetary feature it is compared with<input type="text" name="target_feature" placeholder="Meridiani Planum sulphates"></label>
+        <label class="field">Why is it a good analogue? *<textarea name="science_relevance" rows="4"></textarea></label>
+        <label class="field">Limitations as an analogue<textarea name="analogue_limitations" rows="2"></textarea></label>
+      </fieldset>
+
+      <fieldset class="card" id="s3">
+        <legend>3. Geology and environment</legend>
+        <div class="grid2">
+          <label class="field">Geological setting<select name="geological_setting" data-vocab="geological_setting" data-blank="Choose"></select></label>
+          <label class="field">Main environment type *<select name="environment_type_primary" data-vocab="environment_type" data-blank="Choose"></select></label>
+        </div>
+        <label class="field">Key minerals<span class="hint">Separate with semicolons; use mindat.org names</span><input type="text" name="key_minerals" placeholder="Jarosite; Goethite; Hematite"></label>
+        <label class="field">Rock types<input type="text" name="rock_types" placeholder="Basalt; evaporites"></label>
+        <div class="grid4">
+          <label class="field">pH from<input type="number" step="any" min="-3" max="14" name="ph_min" class="mono"></label>
+          <label class="field">pH to<input type="number" step="any" min="-3" max="14" name="ph_max" class="mono"></label>
+          <label class="field">Temp. from (°C)<input type="number" step="any" name="temp_min_c" class="mono"></label>
+          <label class="field">Temp. to (°C)<input type="number" step="any" name="temp_max_c" class="mono"></label>
+        </div>
+      </fieldset>
+
+      <fieldset class="card" id="s4">
+        <legend>4. Access</legend>
+        <span class="field">Access level *</span>
+        <div class="stack" style="gap:8px" data-levels="access_level"></div>
+        <div class="grid2">
+          <label class="field">Permits required? *<select name="permits_required" data-vocab="yes_no_varies" data-blank="Choose"></select></label>
+          <label class="field">Nearest town<input type="text" name="nearest_town"></label>
+        </div>
+        <label class="field">Permit authority<input type="text" name="permit_authority" placeholder="Who issues permits, with a link"></label>
+      </fieldset>
+
+      <fieldset class="card" id="s5">
+        <legend>5. Safety</legend>
+        <span class="field">Hazard rating * <span class="hint">The highest hazard a normal visitor meets</span></span>
+        <div class="stack" style="gap:8px" data-levels="hazard_rating"></div>
+        <div class="stack" style="gap:10px"><span class="field">Hazards present *</span><div class="checks" data-checks="hazards"></div></div>
+        <label class="field">Safety notes<textarea name="safety_notes" rows="2"></textarea></label>
+      </fieldset>
+
+      <fieldset class="card" id="s6">
+        <legend>6. Sources and you</legend>
+        <label class="field">References * <span class="hint">At least one peer-reviewed source; one DOI or URL per line</span><textarea name="references" rows="3" class="mono" placeholder="10.3390/life4030511"></textarea></label>
+        <div class="grid2">
+          <label class="field">Your name *<input type="text" name="contributor" autocomplete="name"></label>
+          <label class="field">Email<span id="emailStar"> *</span> <span class="hint" id="emailHint">So the reviewer can contact you</span><input type="email" name="email" autocomplete="email"></label>
+        </div>
+        <label class="field">ORCID (optional)<input type="text" name="orcid" class="mono" placeholder="0000-0000-0000-0000"></label>
+        <label class="check" style="align-items:flex-start"><input type="checkbox" name="licence" style="margin-top:3px"> <span>I agree to release this entry under CC BY 4.0, and any sources I cite are accurately described. *</span></label>
+        <div id="errors" class="err" role="alert"></div>
+        <div style="display:flex;flex-wrap:wrap;gap:12px"><button type="submit" class="btn go">Submit for review</button></div>
+      </fieldset>
+    </form>
+
+    <aside style="flex:1 1 280px;min-width:0" class="stack">
+      <section class="card pad stack">
+        <h2 style="font-size:18px">What happens next</h2>
+        <ol style="margin:0;padding-left:20px;display:flex;flex-direction:column;gap:10px;font-size:15px;line-height:1.5">
+          <li>Your submission goes to the catalogue's maintainer.</li>
+          <li>A reviewer checks the science, sources and safety rating.</li>
+          <li>They approve it or contact you about changes.</li>
+          <li>Approved sites appear on the map and in the next citable release, with you credited.</li>
+        </ol>
+      </section>
+      <section class="card pad stack">
+        <h2 style="font-size:18px">Good entries</h2>
+        <ul style="margin:0;padding-left:20px;display:flex;flex-direction:column;gap:8px;font-size:15px;line-height:1.5">
+          <li>Back every number with a source.</li>
+          <li>Say where the analogue breaks down, not just where it works.</li>
+          <li>Rate hazards against the <a href="about.html#ratings">written scales</a>, not gut feel.</li>
+        </ul>
+      </section>
+      <section class="note" style="font-size:14px;line-height:1.55">Prefer GitHub? <a data-repo href="#">Contribute on GitHub</a> with an issue or pull request.</section>
+    </aside>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="inner">
+    <span>Created by <span data-credit></span></span>
+    <span>Data: <a href="about.html#licence">CC BY 4.0</a></span>
+    <span>Code: <a href="about.html#licence">MIT licence</a></span>
+    <span>Version <span data-version></span> · <span data-doi></span></span>
+  </div>
+</footer>
+
+<script src="assets/config.js"></script>
+<script src="assets/vendor/leaflet/leaflet.js"></script>
+<script src="assets/common.js"></script>
+<script src="assets/submit-page.js"></script>
+</body>
+</html>

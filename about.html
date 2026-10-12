@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About and citation · Planetary Analogue Catalogue</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+</head>
+<body>
+<header class="site-header">
+  <div class="inner">
+    <a class="brand" href="index.html">
+      <svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><circle cx="17" cy="17" r="9" fill="#B4471F"/><ellipse cx="17" cy="17" rx="16" ry="5.5" fill="none" stroke="#E9EDF1" stroke-width="1.5" transform="rotate(-20 17 17)"/></svg>
+      <span>Planetary Analogue Catalogue</span>
+    </a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="index.html">Map</a>
+      <a href="browse.html">Browse list</a>
+      <a href="submit.html">Add a site</a>
+      <a href="about.html" aria-current="page">About and citation</a>
+    </nav>
+    <a class="cite-btn" href="#cite">Cite this dataset</a>
+  </div>
+</header>
+
+<main>
+  <article class="card pad prose stack" style="gap:18px">
+    <h1 style="font-size:32px">About the catalogue</h1>
+    <p>The Planetary Analogue Catalogue is an open, searchable map of places on Earth that scientists use to study other worlds: Mars, the Moon, the icy moons and the early Earth. Each entry brings together the science, geology, access and safety information that students, researchers and lecturers need to find a site, judge whether it fits their question and plan a visit.</p>
+    <p>Every value in an entry comes from a cited source. Entries are reviewed before they are marked as verified, and the full dataset is free to reuse.</p>
+
+    <h2 id="cite">How to cite</h2>
+    <p>Cite the dataset as a whole:</p>
+    <div class="cite-box" id="citeAll"></div>
+    <p>Each site page also has a "Cite this entry" button for a single site. Please cite the original papers listed on a site page as well when you use its data.</p>
+
+    <h2 id="ratings">How hazard and access ratings work</h2>
+    <p>Ratings run from 1 to 5 against written definitions, so different contributors should give the same site the same number. A hazard rating describes the highest hazard a normal visitor meets, not the worst case anywhere at the site. Each rating shows when it was last reviewed. Ratings are a starting point for your own risk assessment, never a replacement for one.</p>
+    <div style="overflow-x:auto">
+    <table class="scale">
+      <thead><tr><th scope="col">Level</th><th scope="col">Hazard rating</th><th scope="col">Access level</th></tr></thead>
+      <tbody>
+        <tr><td class="mono">1</td><td><strong>Minimal:</strong> like a normal day out; standard fieldwork kit</td><td><strong>Open:</strong> roadside or public path, no permit</td></tr>
+        <tr><td class="mono">2</td><td><strong>Low:</strong> some exposure (heat, uneven ground); basic precautions</td><td><strong>Easy:</strong> road access; permit simple or not needed</td></tr>
+        <tr><td class="mono">3</td><td><strong>Moderate:</strong> real hazards; needs a group, a plan and suitable kit</td><td><strong>Planned:</strong> 4x4, hike or boat, or a permit that takes weeks</td></tr>
+        <tr><td class="mono">4</td><td><strong>High:</strong> serious hazards (toxic gas, altitude, extreme cold); experienced leaders or a guide required</td><td><strong>Expedition:</strong> remote, multi-day, local guide or authority escort</td></tr>
+        <tr><td class="mono">5</td><td><strong>Extreme:</strong> life-threatening without specialist training and equipment</td><td><strong>Restricted:</strong> research station, military or invitation only</td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <h2>Sensitive sites</h2>
+    <p>Fragile sites, such as living stromatolites, and sites on Indigenous or community land are shown only approximately, to about 10 km or to the region. Entries name the people and authorities to ask for permission where known. Please follow local rules, take only permitted samples and avoid disturbing living communities.</p>
+
+    <h2>Contribute</h2>
+    <ul>
+      <li><a href="submit.html">Add a site</a> or use "Suggest an edit" on any site page.</li>
+      <li>Developers and data people can also <a data-repo href="#">contribute on GitHub</a>.</li>
+      <li>Every submission is checked against its sources before it appears on the map, and contributors are credited in each release.</li>
+    </ul>
+
+    <h2 id="licence">Licences</h2>
+    <ul>
+      <li><strong>Data:</strong> Creative Commons Attribution 4.0 (CC BY 4.0). You may reuse and adapt it, including commercially, as long as you credit the catalogue.</li>
+      <li><strong>Code:</strong> MIT licence.</li>
+      <li><strong>Maps of Earth:</strong> land outlines and country names from Natural Earth (public domain); satellite imagery from <a href="https://s2maps.eu">Sentinel-2 cloudless</a> by EOX IT Services GmbH (contains modified Copernicus Sentinel data, free for non-commercial use); geology from <a href="https://macrostrat.org">Macrostrat</a> (CC BY 4.0); place names &copy; OpenStreetMap contributors.</li>
+      <li><strong>Maps of other worlds:</strong> NASA Solar System Treks and USGS Astrogeology (public domain US Government data), with instrument teams credited on each map. Mars high-detail imagery: NASA/JPL/MSSS/The Murray Lab, hosted by Esri. HRSC data: ESA/DLR/FU Berlin. Kaguya data: JAXA/SELENE.</li>
+      <li><strong>Photos:</strong> from Wikimedia Commons under public domain, CC0, CC BY or CC BY-SA licences. Each photo shows its author and licence; a photo's licence is separate from the dataset's.</li>
+    </ul>
+
+    <h2>Disclaimer</h2>
+    <p>Information is contributed by the community and may be out of date. It is not a risk assessment, and listing a site does not mean you may visit or sample it. Check current conditions, travel advice and permissions with the responsible authorities before any visit. Visitors are responsible for their own safety.</p>
+
+    <p class="muted" style="font-size:14px">Created by <span data-credit></span>. Version <span data-version></span> · <span data-doi></span>.</p>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="inner">
+    <span>Created by <span data-credit></span></span>
+    <span>Data: CC BY 4.0</span>
+    <span>Code: MIT licence</span>
+    <span>Version <span data-version></span> · <span data-doi></span></span>
+  </div>
+</footer>
+
+<script src="assets/config.js"></script>
+<script src="assets/common.js"></script>
+<script>document.getElementById('citeAll').textContent = PAC.citation();</script>
+</body>
+</html>

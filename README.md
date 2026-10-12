@@ -1,50 +1,65 @@
 # Planetary Analogue Catalogue
 
-**A free, open map of places on Earth that scientists use to study other worlds.**
+An open, searchable, citable map of places on Earth that scientists use to study other worlds: Mars, the Moon, the icy moons and the early Earth. Every site entry brings together the science, geology, access and safety information that students, researchers and lecturers need, with a cited source for each value.
 
-### [Open the catalogue →](https://rachellelecussan.github.io/the-planetary-analogue-catalogue/)
+**Website:** https://rachellelecussan.github.io/the-planetary-analogue-catalogue/
 
-![The catalogue's world map, with a pin for each analogue site](assets/screenshot.png)
+## What's here
 
-From the acidic red river of Río Tinto to the lava tubes of northern California, some places on Earth are the closest we can get to Mars, the Moon, Europa or Enceladus without leaving the planet. The Planetary Analogue Catalogue brings these sites together in one place for astrobiology and planetary science students, researchers and lecturers.
+| Path | What it is |
+| --- | --- |
+| `index.html` | The home page: search, filters, a large map and a preview of the selected site |
+| `browse.html` | Every site as a sortable list, with the same search and filters |
+| `site.html` | One page per site, filled from the data (`site.html?id=rio-tinto-es`) |
+| `submit.html` | The "Add a site" and "Suggest a correction" form |
+| `about.html` | About, how to cite, rating scales, licences and disclaimer |
+| `data/sites.geojson` | The dataset: one feature per site, with its references |
+| `data/vocab.json` | Controlled vocabularies used by the filters and the form |
+| `assets/planets.js` | Map layers for the Earth and planet comparison on each site page |
+| `assets/photos/` | Site photos (full size and `-sm` thumbnails) |
+| `data-source/catalogue.xlsx` | The data-entry spreadsheet (the source of truth) |
+| `scripts/build_data.py` | Turns the spreadsheet into `data/sites.geojson` and `data/vocab.json` |
+| `scripts/validate.py` | Checks the dataset; runs automatically on every change |
+| `assets/config.js` | Your name, GitHub repository, form address and DOI |
 
-For each site you'll find:
+## Publishing on GitHub Pages
 
-- **what it's an analogue for**, and where the comparison works and where it breaks down
-- **geology and mineralogy**, with the key papers to read
-- **access and safety**: how to get there, permits, and hazard and access ratings
-- **photos** and a **side-by-side map** of the site next to the matching place on the other world, with geology and mineral overlays
+1. Create a public repository (this one is called `the-planetary-analogue-catalogue`).
+2. Upload every file and folder from this project (drag them onto "uploading an existing file").
+3. In the repository, go to **Settings → Pages**, set **Source** to "Deploy from a branch", choose `main` and `/ (root)`, and save.
+4. After a minute or two the site is live at `https://rachellelecussan.github.io/the-planetary-analogue-catalogue/`.
 
-Every value comes from a cited source.
+Then edit `assets/config.js` (pencil icon on GitHub) to set your name, repository and, optionally, a form address for email submissions.
 
-## Using the catalogue
+## Updating the data
 
-- **Find a site:** search or filter the [map](https://rachellelecussan.github.io/the-planetary-analogue-catalogue/) by world, site type, hazard level or access, or see everything as a [list](https://rachellelecussan.github.io/the-planetary-analogue-catalogue/browse.html).
-- **Plan a visit:** hazard and access ratings use written 1–5 scales, explained on the [About page](https://rachellelecussan.github.io/the-planetary-analogue-catalogue/about.html#ratings). They're a starting point for your own risk assessment, not a replacement for one.
-- **Use the data:** the whole dataset is in [`data/sites.geojson`](data/sites.geojson), which opens in QGIS, Python or any GIS tool, and in the spreadsheet [`data-source/catalogue.xlsx`](data-source/catalogue.xlsx).
+1. Edit `data-source/catalogue.xlsx` (Sites and References tabs).
+2. Run `pip install openpyxl` once, then `python scripts/build_data.py`.
+3. Run `python scripts/validate.py` and fix any errors it reports.
+4. Commit the updated `data/sites.geojson`, `data/vocab.json` and spreadsheet.
 
-## Adding or correcting a site
+Locations are rounded according to each site's `coordinate_precision`, and sensitive sites are never published more precisely than about 10 km.
 
-Know a site that's missing, or spotted a mistake? Use [**Add a site**](https://rachellelecussan.github.io/the-planetary-analogue-catalogue/submit.html) on the website, or "Suggest an edit" on any site page. No GitHub account is needed. Every submission is checked against its sources before it appears, and contributors are credited.
+## Previewing locally
 
-If you'd like to work on the data or code directly, see [CONTRIBUTING.md](CONTRIBUTING.md).
+The pages load data files, so open them through a local web server rather than by double-clicking:
+
+```
+python -m http.server 8000
+```
+
+then visit http://localhost:8000.
 
 ## Citing
 
-If you use the catalogue in your work, please cite it:
-
-> Le Cussan, R. (2026). Planetary Analogue Catalogue, version 0.1. https://rachellelecussan.github.io/the-planetary-analogue-catalogue/
-
-GitHub's **"Cite this repository"** button gives the citation in other formats. Please also cite the original papers listed on each site page.
+See `CITATION.cff` or the About page. Please also cite the original papers listed on each site page.
 
 ## Licences
 
-The data is free to reuse under [CC BY 4.0](LICENSE-DATA.md) (credit the catalogue), and the code under the [MIT licence](LICENSE). Photos, maps and imagery come from Wikimedia Commons, NASA, USGS, Natural Earth, Macrostrat and EOX, each credited on the site; see the [About page](https://rachellelecussan.github.io/the-planetary-analogue-catalogue/about.html#licence) for details.
+- **Data** (`data/`, `data-source/`): [CC BY 4.0](LICENSE-DATA.md)
+- **Code**: [MIT](LICENSE)
+- Land outlines and label positions from [Natural Earth](https://www.naturalearthdata.com) (public domain); map library [Leaflet](https://leafletjs.com) (BSD 2-clause, see `assets/vendor/leaflet/LICENSE`).
+- Comparison maps load tiles from NASA Solar System Treks, USGS, Macrostrat (CC BY 4.0) and EOX Sentinel-2 cloudless (non-commercial use). Mars mineral detections in `data/planets/` come from NASA Mars Trek.
+- Photos in `assets/photos/` are from Wikimedia Commons; each photo's author and licence are listed on the Photos tab of the spreadsheet and shown on the site.
 
-## Disclaimer
-
-Information is contributed by the community and may be out of date. Listing a site doesn't mean you may visit or sample it. Check current conditions and permissions with the responsible authorities before any visit.
-
----
-
-Created by Rachelle Le Cussan.
+Hazard and access ratings are guidance from contributors, not a risk assessment.

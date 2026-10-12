@@ -1,0 +1,120 @@
+{
+ "analogue_for": [
+  "Mars",
+  "Moon",
+  "Venus",
+  "Mercury",
+  "Europa",
+  "Enceladus",
+  "Titan",
+  "Ganymede",
+  "Callisto",
+  "Io",
+  "Ceres",
+  "Vesta",
+  "Comets",
+  "Asteroids (general)",
+  "Icy moons (general)",
+  "Exoplanets (general)",
+  "Early Earth"
+ ],
+ "analogue_type": [
+  "Geological / geomorphological",
+  "Mineralogical",
+  "Geochemical",
+  "Habitability / biological",
+  "Impact",
+  "Volcanic",
+  "Cryospheric",
+  "Aeolian",
+  "Hydrological",
+  "Operational (instrument, rover or crew testing)"
+ ],
+ "environment_type": [
+  "Hyperarid",
+  "Polar desert",
+  "Permafrost",
+  "Glacial / subglacial",
+  "Hot spring / hydrothermal",
+  "Deep-sea vent",
+  "Acidic",
+  "Alkaline",
+  "Hypersaline",
+  "Evaporite",
+  "Iron-rich",
+  "Sulphur-rich",
+  "Lava field / lava tube",
+  "Impact structure",
+  "High altitude / high UV",
+  "Cave"
+ ],
+ "geological_setting": [
+  "Volcanic",
+  "Impact",
+  "Sedimentary basin",
+  "Evaporite basin",
+  "Hydrothermal / ore deposit",
+  "Glacial",
+  "Aeolian",
+  "Ancient craton"
+ ],
+ "hazards": [
+  "Extreme heat",
+  "Extreme cold",
+  "Altitude",
+  "Toxic gas",
+  "Acidic or caustic water",
+  "Unstable ground",
+  "Rockfall",
+  "Volcanic activity",
+  "Flash flood",
+  "Remoteness / no phone signal",
+  "Dangerous wildlife",
+  "Old mine workings",
+  "Political instability",
+  "Sea or tides"
+ ],
+ "land_status": [
+  "Public",
+  "Protected area / national park",
+  "UNESCO site",
+  "Private",
+  "Indigenous or community land",
+  "Military",
+  "Research station",
+  "Unknown"
+ ],
+ "coordinate_precision": [
+  "Exact",
+  "Approximately 1 km",
+  "Approximately 10 km",
+  "Region only"
+ ],
+ "review_status": [
+  "Draft",
+  "In review",
+  "Verified",
+  "Needs update"
+ ],
+ "yes_no": [
+  "Yes",
+  "No"
+ ],
+ "yes_no_varies": [
+  "Yes",
+  "No",
+  "Varies"
+ ],
+ "yes_no_unknown": [
+  "Yes",
+  "No",
+  "Unknown"
+ ],
+ "level_1_5": [
+  1,
+  2,
+  3,
+  4,
+  5
+ ]
+}

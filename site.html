@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Site entry · Planetary Analogue Catalogue</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/vendor/leaflet/leaflet.css">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+</head>
+<body>
+<header class="site-header">
+  <div class="inner">
+    <a class="brand" href="index.html">
+      <svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><circle cx="17" cy="17" r="9" fill="#B4471F"/><ellipse cx="17" cy="17" rx="16" ry="5.5" fill="none" stroke="#E9EDF1" stroke-width="1.5" transform="rotate(-20 17 17)"/></svg>
+      <span>Planetary Analogue Catalogue</span>
+    </a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="index.html">Map</a>
+      <a href="browse.html">Browse list</a>
+      <a href="submit.html">Add a site</a>
+      <a href="about.html">About and citation</a>
+    </nav>
+    <a class="cite-btn" href="about.html#cite">Cite this dataset</a>
+  </div>
+</header>
+
+<main id="main">
+  <p class="muted">Loading site…</p>
+</main>
+
+<footer class="site-footer">
+  <div class="inner">
+    <span>Created by <span data-credit></span></span>
+    <span>Data: <a href="about.html#licence">CC BY 4.0</a></span>
+    <span>Code: <a href="about.html#licence">MIT licence</a></span>
+    <span>Version <span data-version></span> · <span data-doi></span></span>
+    <span class="wide">Hazard and access ratings are guidance, not a risk assessment. Check local conditions and permissions before any visit.</span>
+  </div>
+</footer>
+
+<script src="assets/config.js"></script>
+<script src="assets/vendor/leaflet/leaflet.js"></script>
+<script src="assets/common.js"></script>
+<script src="assets/planets.js"></script>
+<script src="assets/compare.js"></script>
+<script src="assets/site-page.js"></script>
+</body>
+</html>
