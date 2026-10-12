@@ -1,65 +1,61 @@
 # Planetary Analogue Catalogue
 
-An open, searchable, citable map of places on Earth that scientists use to study other worlds: Mars, the Moon, the icy moons and the early Earth. Every site entry brings together the science, geology, access and safety information that students, researchers and lecturers need, with a cited source for each value.
+An open, searchable catalogue of places on Earth that scientists use to study other worlds. For each site, it brings together the science, geology, access and safety information that students, researchers and lecturers need, with a cited source for every value.
 
-**Website:** https://rachellelecussan.github.io/planetary-analogue-catalogue/
+**Live site:** https://rachellelecussan.github.io/planetary-analogue-catalogue/
 
-## What's here
+## What is a planetary analogue?
 
-| Path | What it is |
-| --- | --- |
-| `index.html` | The home page: search, filters, a large map and a preview of the selected site |
-| `browse.html` | Every site as a sortable list, with the same search and filters |
-| `site.html` | One page per site, filled from the data (`site.html?id=rio-tinto-es`) |
-| `submit.html` | The "Add a site" and "Suggest a correction" form |
-| `about.html` | About, how to cite, rating scales, licences and disclaimer |
-| `data/sites.geojson` | The dataset: one feature per site, with its references |
-| `data/vocab.json` | Controlled vocabularies used by the filters and the form |
-| `assets/planets.js` | Map layers for the Earth and planet comparison on each site page |
-| `assets/photos/` | Site photos (full size and `-sm` thumbnails) |
-| `data-source/catalogue.xlsx` | The data-entry spreadsheet (the source of truth) |
-| `scripts/build_data.py` | Turns the spreadsheet into `data/sites.geojson` and `data/vocab.json` |
-| `scripts/validate.py` | Checks the dataset; runs automatically on every change |
-| `assets/config.js` | Your name, GitHub repository, form address and DOI |
+An analogue is an Earth place whose rocks, landforms, chemistry or environment resemble those on another body in the Solar System. Scientists study analogues to test instruments, methods and ideas on the ground, before or alongside missions to the real target.
 
-## Publishing on GitHub Pages
+For example, Río Tinto in Spain has acidic, iron-rich water and iron-bearing minerals like those found on Mars.
 
-1. Create a public repository (this one is called `planetary-analogue-catalogue`).
-2. Upload every file and folder from this project (drag them onto "uploading an existing file").
-3. In the repository, go to **Settings → Pages**, set **Source** to "Deploy from a branch", choose `main` and `/ (root)`, and save.
-4. After a minute or two the site is live at `https://rachellelecussan.github.io/planetary-analogue-catalogue/`.
+Each entry records what the site is an analogue for, why the comparison is useful, and where it breaks down.
 
-Then edit `assets/config.js` (pencil icon on GitHub) to set your name, repository and, optionally, a form address for email submissions.
+## What the dataset contains
 
-## Updating the data
+The dataset has one record per site. There are currently **16 sites**, with **96 references** and **42 photographs**.
 
-1. Edit `data-source/catalogue.xlsx` (Sites and References tabs).
-2. Run `pip install openpyxl` once, then `python scripts/build_data.py`.
-3. Run `python scripts/validate.py` and fix any errors it reports.
-4. Commit the updated `data/sites.geojson`, `data/vocab.json` and spreadsheet.
+Each record covers:
 
-Locations are rounded according to each site's `coordinate_precision`, and sensitive sites are never published more precisely than about 10 km.
+- **Identity:** name, alternative names, country, region and approximate location.
+- **Analogue:** the body or bodies compared, the type of analogue (for example geological, mineralogical, volcanic or habitability), the feature being compared, why it is relevant, and where the comparison breaks down.
+- **Geology and environment:** setting, rock types, key minerals, age, environment type, pH range and whether life is present.
+- **Access and safety:** access level, permits and the authority that issues them, land status, nearest town, sampling rules, a hazard rating, hazards and safety notes.
+- **Comparison:** a paired location on another body, used for the side-by-side maps on each site page.
+- **Evidence:** references and photographs, each with its author, licence and source.
+- **Status:** date added and review status (Draft or Verified).
 
-## Previewing locally
+So far the sites are analogues for **Mars**, the **Moon**, **Europa**, **Enceladus** and **Early Earth**. The dataset does not yet include sites for Titan, Venus, Mercury, Ceres or other bodies.
 
-The pages load data files, so open them through a local web server rather than by double-clicking:
+## How the data is kept
 
-```
-python -m http.server 8000
-```
+The spreadsheet `data-source/catalogue.xlsx` is the single source of truth. Everything published on the site is generated from it, so changes are always made in the spreadsheet.
 
-then visit http://localhost:8000.
+Two automatic checks run on every change: one builds the public data, and one validates it. If validation fails, the site is not published.
+
+## Data notes
+
+- **Locations are rounded.** Each site has a coordinate precision, from exact down to region only. Sensitive sites, including fragile environments and sites on Indigenous or community land, are never published more precisely than about 10 km.
+- **Ratings are guidance.** Hazard and access ratings come from contributors. They are not a formal risk assessment, and each needs a review date.
+- **Every value has a source.** Leave a field blank rather than guess. At least one reference per site should be peer-reviewed.
+- **Draft means not yet checked.** Entries start as Draft and become Verified once a second person has checked the science, sources and ratings.
 
 ## Citing
 
-See `CITATION.cff` or the About page. Please also cite the original papers listed on each site page.
+Please cite the catalogue and the original papers listed on each site page. See `CITATION.cff` or the About page for the citation format.
+
+## Contributing
+
+To suggest a new site or a correction, use the **Add a site** form on the website, or the **Suggest an edit** link on any site page. Full guidance is in [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Licences
 
-- **Data** (`data/`, `data-source/`): [CC BY 4.0](LICENSE-DATA.md)
-- **Code**: [MIT](LICENSE)
-- Land outlines and label positions from [Natural Earth](https://www.naturalearthdata.com) (public domain); map library [Leaflet](https://leafletjs.com) (BSD 2-clause, see `assets/vendor/leaflet/LICENSE`).
-- Comparison maps load tiles from NASA Solar System Treks, USGS, Macrostrat (CC BY 4.0) and EOX Sentinel-2 cloudless (non-commercial use). Mars mineral detections in `data/planets/` come from NASA Mars Trek.
-- Photos in `assets/photos/` are from Wikimedia Commons; each photo's author and licence are listed on the Photos tab of the spreadsheet and shown on the site.
+- **Data:** [CC BY 4.0](LICENSE-DATA.md)
+- **Code:** [MIT](LICENSE)
+- **Photographs:** each photo's author and licence are shown on its site page and listed in the spreadsheet.
+- **Maps:** land outlines and labels from [Natural Earth](https://www.naturalearthdata.com) (public domain). Map imagery comes from NASA Solar System Treks, USGS, NASA GIBS, Macrostrat and EOX, each under its own terms, shown on the map.
 
-Hazard and access ratings are guidance from contributors, not a risk assessment.
+## Disclaimer
+
+The catalogue is a teaching and research resource, not a safety guide. Check permits, local rules and conditions before visiting any site.
