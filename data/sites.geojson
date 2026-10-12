@@ -976,6 +976,22 @@
       "licence": "Public domain",
       "licence_url": null,
       "source": "https://commons.wikimedia.org/wiki/File:Edge_of_Haughton_Crater_%282672692755%29.jpg"
+     },
+     {
+      "file": "haughton-crater-ca-2.jpg",
+      "caption": "Rock formation inside Haughton Crater, Devon Island",
+      "author": "Haughton Mars Project",
+      "licence": "Public domain",
+      "licence_url": null,
+      "source": "https://commons.wikimedia.org/wiki/File:Rock_Formation_in_Haughton_Crater_%282673474042%29.jpg"
+     },
+     {
+      "file": "haughton-crater-ca-3.jpg",
+      "caption": "NASA K10 rovers near the Haughton-Mars Project base camp",
+      "author": "NASA",
+      "licence": "Public domain",
+      "licence_url": null,
+      "source": "https://commons.wikimedia.org/wiki/File:Rovers_Red_and_Black_at_Houghton_Crater_Devon_Island_Canada.jpg"
      }
     ]
    }
@@ -1159,7 +1175,32 @@
       }
      ]
     },
-    "photos": []
+    "photos": [
+     {
+      "file": "iceland-volcanic-fields-is-1.jpg",
+      "caption": "Holuhraun fissure eruption, September 2014",
+      "author": "Robert Askew ( https://imaggeo.egu.eu/user/283721/ )",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Holuhraun_Fissure_Eruption_in_Iceland_-_September_2014.jpg"
+     },
+     {
+      "file": "iceland-volcanic-fields-is-2.jpg",
+      "caption": "Aerial view of the Holuhraun eruption and lava field",
+      "author": "Milan Nykodym from Kutna Hora, Czech Republic",
+      "licence": "CC BY-SA 2.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:B%C3%A1r%C3%B0arbunga_-_Holuhraun_%2814971302084%29.jpg"
+     },
+     {
+      "file": "iceland-volcanic-fields-is-3.jpg",
+      "caption": "Leirhnjúkur lava field in the Krafla caldera",
+      "author": "rheins",
+      "licence": "CC BY 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Leirhnj%C3%BAkur_Lava_Field_-_2013.08_-_panoramio.jpg"
+     }
+    ]
    }
   },
   {
@@ -2014,7 +2055,32 @@
       }
      ]
     },
-    "photos": []
+    "photos": [
+     {
+      "file": "lanzarote-es-1.jpg",
+      "caption": "ʻAʻā lava field in Timanfaya National Park",
+      "author": "H. Zell",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Timanfaya_-_Lanzarote_04.jpg"
+     },
+     {
+      "file": "lanzarote-es-2.jpg",
+      "caption": "Pāhoehoe lava field in Timanfaya National Park",
+      "author": "H. Zell",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Timanfaya_-_Lanzarote_02.jpg"
+     },
+     {
+      "file": "lanzarote-es-3.jpg",
+      "caption": "Lava fields and volcanic cones, Timanfaya National Park",
+      "author": "Gerd Eichmann",
+      "licence": "CC BY 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Lanzarote-Nationalpark_Timanfaya-12-Lava-2015-gje.jpg"
+     }
+    ]
    }
   },
   {
@@ -2832,7 +2898,24 @@
       }
      ]
     },
-    "photos": []
+    "photos": [
+     {
+      "file": "lost-city-vent-field-2.jpg",
+      "caption": "Carbonate tower rising at the Lost City vent field",
+      "author": "“Susan Lang, U. of SC. / NSF / ROV Jason / 2018 © Woods Hole Oceanographic Institution.”",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Sulis_20180919080019.jpg"
+     },
+     {
+      "file": "lost-city-vent-field-3.jpg",
+      "caption": "Carbonate formation at Lost City, Okeanos Explorer expedition",
+      "author": "NOAA",
+      "licence": "Public domain",
+      "licence_url": null,
+      "source": "https://commons.wikimedia.org/wiki/File:Formation_at_Lost_City_Field.jpg"
+     }
+    ]
    }
   },
   {
@@ -3047,7 +3130,24 @@
       }
      ]
     },
-    "photos": []
+    "photos": [
+     {
+      "file": "lake-vostok-aq-1.jpg",
+      "caption": "Russian Vostok Station on the East Antarctic plateau",
+      "author": "NSF/Josh Landis, employee 1999-2001",
+      "licence": "Public domain",
+      "licence_url": null,
+      "source": "https://commons.wikimedia.org/wiki/File:Russian_station_Vostok.jpg"
+     },
+     {
+      "file": "lake-vostok-aq-2.jpg",
+      "caption": "RADARSAT radar image of the ice surface above Lake Vostok",
+      "author": "NASA/Goddard Space Flight Center Scientific Visualization Studio. Additional credit goes to Canadian Space Agency, RADARSAT International Inc.",
+      "licence": "Public domain",
+      "licence_url": null,
+      "source": "https://commons.wikimedia.org/wiki/File:Lake_Vostok_NASA.jpg"
+     }
+    ]
    }
   },
   {
@@ -3223,7 +3323,24 @@
       }
      ]
     },
-    "photos": []
+    "photos": [
+     {
+      "file": "lava-beds-us-1.jpg",
+      "caption": "Illuminated lava tube cave at Lava Beds National Monument",
+      "author": "Leonard G.",
+      "licence": "Public domain",
+      "licence_url": null,
+      "source": "https://commons.wikimedia.org/wiki/File:IlluminatedLavaTubeAtLBNMi-C0070.JPG"
+     },
+     {
+      "file": "lava-beds-us-3.jpg",
+      "caption": "Valentine Cave lava tube, Lava Beds National Monument",
+      "author": "Dave Bunnell / Under Earth Images",
+      "licence": "CC BY-SA 2.5",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/2.5/",
+      "source": "https://commons.wikimedia.org/wiki/File:Valentine_Cave.JPG"
+     }
+    ]
    }
   }
  ]
